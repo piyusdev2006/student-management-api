@@ -75,19 +75,21 @@ async function listSchools(req, res) {
     const [schools] = await pool.query(query);
     
     // Calculate distance for each school and add it to the school object
-    const schoolsWithDistance = schools.map(school => {
+    const schoolsWithDistance = schools.map((school) => {
       const distance = calculateDistance(
-        userLat, 
-        userLon, 
-        school.latitude, 
+        userLat,
+        userLon,
+        school.latitude,
         school.longitude
       );
-      
+
       return {
         ...school,
-        distance: parseFloat(distance.toFixed(2)) // Round to 2 decimal places
+        distance: parseFloat(distance.toFixed(2)), // Round to 2 decimal places
       };
     });
+    
+    
     
     // Sort schools by distance (closest first)
     schoolsWithDistance.sort((a, b) => a.distance - b.distance);

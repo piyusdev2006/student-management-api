@@ -205,26 +205,7 @@ GET /listSchools?latitude=39.7817&longitude=-89.6501&limit=10&radius=50
         "address": "123 Education Street, Springfield, IL 62701",
         "latitude": 39.7817,
         "longitude": -89.6501,
-        "distance": 0.0,
-        "distanceUnit": "km"
-      },
-      {
-        "id": 2,
-        "name": "Lincoln Middle School",
-        "address": "456 Learning Ave, Springfield, IL 62702",
-        "latitude": 39.7901,
-        "longitude": -89.6440,
-        "distance": 1.2,
-        "distanceUnit": "km"
-      },
-      {
-        "id": 3,
-        "name": "Washington High School",
-        "address": "789 Knowledge Blvd, Springfield, IL 62703",
-        "latitude": 39.7750,
-        "longitude": -89.6580,
-        "distance": 2.1,
-        "distanceUnit": "km"
+        "distance": 4403.05
       }
     ]
   }
