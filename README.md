@@ -268,26 +268,14 @@ school-management-api/
 ├── src/
 │   ├── controllers/
 │   │   └── schoolController.js
-│   ├── models/
-│   │   └── schoolModel.js
 │   ├── routes/
 │   │   └── schoolRoutes.js
-│   ├── middleware/
-│   │   ├── validation.js
-│   │   └── errorHandler.js
-│   ├── config/
-│   │   └── database.js
-│   └── utils/
-│       └── distanceCalculator.js
-├── tests/
-│   ├── unit/
-│   └── integration/
-├── docs/
-├── .env.example
-├── .gitignore
+│   ├── app.js
+│   ├── db.js
+│   └── utils.js
+├── .env
 ├── package.json
-├── README.md
-└── server.js
+└── README.md
 ```
 
 ## 🔧 Configuration
